@@ -5,19 +5,19 @@ const schema = new mongoose.Schema(
     nome: {
       type: String,
       required: true,
-      lowercase: true,
+      
     },
 
     clima: {
       type: String,
       required: true,
-      lowercase: true,
+     
     },
 
     terreno: {
         type: String,
         required: true,
-        lowercase: true,
+       
       },
 
     
