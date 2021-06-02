@@ -5,6 +5,7 @@ const schema = new mongoose.Schema(
     nome: {
       type: String,
       required: true,
+      lowercase: true,
       
     },
 

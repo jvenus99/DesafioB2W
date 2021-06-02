@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -- -r esm -r dotenv/config index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -- -r esm -r dotenv/config index.js --igonore __tests__",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/jvenus99/DesafioB2W/issues"
   },
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
+  },
   "homepage": "https://github.com/jvenus99/DesafioB2W#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -24,6 +27,10 @@
     "mongoose": "^5.12.12",
     "nodemon": "^2.0.7",
     "restify": "^8.5.1",
-    "restify-router": "^0.6.2"
+    "restify-router": "^0.6.2",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "jest": "^27.0.3"
   }
 }
