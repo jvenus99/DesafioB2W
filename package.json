@@ -1,0 +1,29 @@
+{
+  "name": "DesafioB2W-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -- -r esm -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvenus99/DesafioB2W.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvenus99/DesafioB2W/issues"
+  },
+  "homepage": "https://github.com/jvenus99/DesafioB2W#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "mongoose": "^5.12.12",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "restify": "^8.5.1"
+  }
+}

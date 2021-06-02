@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    db:
+        image: 'mongo:latest'
+        container_name: STAR_WAR_PLANETS
+        restart: always
+        ports:
+          - 27017:27017
+        environment: 
+            MONGO_INITDB_DATABASE: nodeauth
+            MONGO_INITDB_ROOT_USERNAME: nodeauth
+            MONGO_INITDB_ROOT_PASSWORD: nodeauth
+        volumes:
+          - ./data/db:/data/db
+
+
+
+   
+
+ 
