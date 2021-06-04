@@ -14,7 +14,14 @@ services:
         volumes:
           - ./data/db:/data/db
 
-
+    app: 
+      container_name: star-api
+      restart: always
+      build: .
+      ports: 
+        - "3000:3000" 
+      depends_on: 
+        - db
 
    
 

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -- -r esm -r dotenv/config index.js --igonore __tests__",
+    "start" : "node -- -r esm -r dotenv/config index.js --igonore __tests__",
     "test": "jest"
   },
   "repository": {
