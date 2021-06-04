@@ -13,16 +13,25 @@ services:
             MONGO_INITDB_ROOT_PASSWORD: nodeauth
         volumes:
           - ./data/db:/data/db
-
     app: 
+      image: node:latest
       container_name: star-api
       restart: always
-      build: .
-      ports: 
-        - "3000:3000" 
+      env_file:
+        - .env
       depends_on: 
         - db
-
+      ports: 
+        - 3000:3000 
+      volumes:
+        - .:/usr/src/app
+      working_dir: /usr/src/app
+      command: npm start
+      logging:
+        driver: "json-file"
+        options:
+          max-size: "10m"
+          max-file: "5"
    
 
  
