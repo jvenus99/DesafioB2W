@@ -21,6 +21,11 @@ const schema = new mongoose.Schema(
        
       },
 
+    qtdeAparicoes: {
+      type: String,
+      required: false,
+    }
+
     
   },
   {

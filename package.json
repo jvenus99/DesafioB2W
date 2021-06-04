@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jvenus99/DesafioB2W#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "dotenv": "^10.0.0",
     "esm": "^3.2.25",
     "mongoose": "^5.12.12",
